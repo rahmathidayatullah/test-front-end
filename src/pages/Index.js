@@ -41,9 +41,25 @@ export default function Index() {
     setData(_temp);
   };
 
+  React.useEffect(() => {
+    let time = setInterval(() => {
+      let newTIme = new Date();
+      console.log(newTIme);
+    }, 1000);
+  }, []);
+
   return (
     <div className="p-4 bg-gray h-screen overflow-scroll">
-      <div className="bg-gradient-cs w-full h-96 mb-24"></div>
+      <div className="bg-gradient-cs w-full h-96 mb-24 overflow-hidden">
+        <div
+          className="w-full border-4 bg-black border-white relative"
+          style={{
+            height: "28rem",
+            top: "-18rem",
+            transform: "rotate(-16deg)",
+          }}
+        ></div>
+      </div>
       <h1 className="text-center text-4xl font-semibold mb-6">
         SPE Frontend Shop
       </h1>
