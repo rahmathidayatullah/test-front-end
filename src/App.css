@@ -37,17 +37,12 @@
   }
 }
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.bg-gradient-cs {
+  background: rgb(0, 219, 222);
+  background: linear-gradient(
+    62deg,
+    rgba(0, 219, 222, 1) 22%,
+    rgba(252, 0, 255, 1) 91%,
+    rgba(252, 0, 255, 1) 100%
+  );
 }
-body{
-  padding: 20px;
-}
-.card{
-  border: 1px solid black;
-  margin: 20px 5px;
-  padding: 10px;
-}
-
